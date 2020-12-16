@@ -151,7 +151,7 @@ let borrarFila = () => {
 		if(dinosauriosExistentes != null || dinosauriosExistentes != "") {
 			for (let i = 0; i < dinosauriosExistentes.length; i++ ) {
 			document.getElementById("borrarFila"+i).onclick = () => {
-				if (AceptarCancelar("Desea eliminar la fila?") == true){
+				if (AceptarCancelar(`Desea eliminar el dinosaurio ${dinosauriosExistentes[i].nombre } de la tabla?`) == true){
 					borrarFilaPorId(dinosauriosExistentes, i);
 				}
 			}
