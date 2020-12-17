@@ -14,6 +14,7 @@ let mostrar = () => {
     document.getElementById('limpiarFiltro').style.display = 'inline-block';
 }
 
+//Funcion que muestra y oculta el filtro
 let filtroTabla = () => {
     let valor = document.getElementById("filtro-valor").checked;
     if(valor == true) {
@@ -23,7 +24,7 @@ let filtroTabla = () => {
     }
 }
 
-//Funcion 
+//Funcion que filtra los elementos en el localStorage por nombre, tamaño y peso
 let filtrar = () => {
     let html = "";
     let inputNombre = document.getElementById('inputs-filtro-nombre').value.toLowerCase();
@@ -52,6 +53,7 @@ let filtrar = () => {
     }
 }
 
+//Funcion que chequea si incluye algun substring dentro del otro
 let contieneString = (dinosaurio, inputDinosaurio) => {
         if (inputDinosaurio == "") {
             return false;
@@ -63,6 +65,7 @@ let contieneString = (dinosaurio, inputDinosaurio) => {
         }
 }
 
+//Formatea el dinosaurio filtrado en otro formato
 let formatearDinosaurioFiltrado = (dinosaurio, i) => {
 	let html = "";
 	html += '<tr class="color-text-table dinosaurioFiltroRow" id="'+dinosaurio.id+'">';
@@ -72,12 +75,13 @@ let formatearDinosaurioFiltrado = (dinosaurio, i) => {
 	html += '<td id="tamaño-fila'+i+'">' + dinosaurio.tamaño + ' metros</td>';
 	html += '<td id="peso-fila'+i+'">' + dinosaurio.peso + ' toneladas</td>';
 	html += '<td id="era-fila'+i+'">' + dinosaurio.era + '</td>';
-	html += '<td><img class="GED-ico" src="../Imagenes/Ico/filter.png" alt="filtro icono"/></td>';
+	html += '<td><img class="chibi-ico" src="../Imagenes/Ico/trex-chibi.png" alt="filtro icono"/></td>';
 	html += '</tr>';
 
 	return html;
 }
 
+//limpia y recarga la pagina
 let limpiarFiltro = () => {
     document.getElementById('inputs-filtro-nombre').value = "";
     document.getElementById('inputs-filtro-tamaño').value = "";

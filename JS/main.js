@@ -241,33 +241,8 @@ let editarPorId = (dinosauriosRecuperados, i) => {
 	}
 }
 
-//Funcion comentada que llena la tabla con datos de prueba
-// let llenarTabla = () =>  {
-// 	let dinosaurio = [{"id": 0, "nombre": "Daspletosaurus", "alimentacion": "Carnivoro",
-// 						"tamaño": 12, "peso": 11, "era": "Triásico" },
-// 						{"id": 1, "nombre": "Tiranosaurio Rex", "alimentacion": "Carnivoro",
-// 						"tamaño": 11, "peso": 3, "era": "Jurásico" },
-// 						{"id": 2, "nombre": "Diplodocus", "alimentacion": "Herbivoro",
-// 						"tamaño": 13, "peso": 11, "era": "Jurásico" },
-// 						{"id": 3, "nombre": "Velociraptor", "alimentacion": "Carnivoro",
-// 						"tamaño": 2, "peso": 32, "era": "Triásico" },
-// 						{"id": 4, "nombre": "Ankylosaurio", "alimentacion": "Herbivoro",
-// 						"tamaño": 11, "peso": 1, "era": "Cretácico" },
-// 						{"id": 5, "nombre": "Carnosaurio", "alimentacion": "Carnivoro",
-// 						"tamaño": 4, "peso": 11, "era": "Jurásico" },
-// 						{"id": 6, "nombre": "Chasmosaurio", "alimentacion": "Herbivoro",
-// 						"tamaño": 11, "peso": 5, "era": "Cretácico" },
-// 						{"id": 7, "nombre": "Megalania", "alimentacion": "Carnivoro",
-// 						"tamaño": 5, "peso": 11, "era": "Jurásico" }
-// 					];
-// 	dinosaurio.forEach(e => comprobarDinosaurio(e));
-// 	resetModal();
-// 	location.reload();
-// }
-
 document.addEventListener('DOMContentLoaded', let = () => {
 	document.getElementById("botonAgregar").onclick = crearFila;
-	// document.getElementById("botonLlenar").onclick = llenarTabla; //Evento comentado de la accion del boton de llenar la tabla
 	document.getElementById("filtro-valor").onclick = filtroTabla;
 	document.getElementById("aceptarFiltro").onclick = filtrar;
 	document.getElementById("limpiarFiltro").onclick = limpiarFiltro;
